@@ -12,7 +12,7 @@ import Topbar from "@/components/Topbar"
 
 const Home = () => {
   return (
-    <div className="w-full max-w-[1140px] mx-auto overflow-hidden bg-white">
+    <div className="w-full max-w-[1440px] mx-auto overflow-hidden bg-white">
       <Topbar />
       <Header />
       <Hero />
