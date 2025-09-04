@@ -35,7 +35,7 @@ a.link-secondary {
 }
 
 .container {
-  @apply px-4 lg:px-0;
+  @apply px-4 lg:px-12;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -68,6 +68,10 @@ a.link-secondary {
 
 .btn-icon {
   @apply w-[52px] h-[52px] flex items-center justify-center cursor-pointer;
+}
+
+.btn-outline {
+  @apply border border-grey-200;
 }
 
 .btn-accent {
