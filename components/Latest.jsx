@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Slider from './Slider'
 
 const Latest = () => {
   return (
@@ -14,6 +15,7 @@ const Latest = () => {
           </Link>
         </div>
         {/* Slider */}
+        <Slider />
       </div>
     </section>
   )
