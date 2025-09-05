@@ -2,8 +2,10 @@
 @import "tw-animate-css";
 
 @theme {
-  --font-primary: var(--font-teko);
-  --font-secondary: var(--font-poppins);
+  /* --font-primary: var(--font-teko);
+  --font-secondary: var(--font-poppins);  */
+  --font-primary: Teko;
+  --font-secondary: Poppins;
   --color-primary: #252525;
   --color-secondary: #6d6d6d;
   --color-accent: #cbfe01;
@@ -22,8 +24,12 @@
   --breakpoint--2xl: 1200px;
 }
 
-body {
+/* body {
   @apply font-secondary text-secondary bg-grey-200;
+} */
+
+body {
+  @apply text-secondary bg-grey-200;
 }
 
 a.link-primary {
@@ -42,8 +48,9 @@ a.link-secondary {
   @apply font-primary text-primary;
 }
 
+
 .h1 {
-  @apply text-6xl md:text-[130px] uppercase leading-[90%];
+  @apply text-6xl md:text-[130px] uppercase leading-[80%];
 }
 
 .h2 {
