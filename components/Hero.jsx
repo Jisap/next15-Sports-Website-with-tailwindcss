@@ -9,13 +9,15 @@ const Hero = () => {
         <div className="relative flex flex-col xl:flex-row items-center w-full">
           
           {/* text */}
-          <div>
+          <div className="w-full max-w-[760px] mb-24 md:mb-0">
             {/* badge & text */}
             <div>
               badge & text
             </div>
             {/* h1 */}
-            <h1 className="h1 mb-[40px]">h1</h1>
+            <h1 className="h1 mb-[40px]">
+              Unleash <br /> Your Inner <br/> Athlete
+            </h1>
             {/* btns */}
             <div>btns</div>
           </div>
