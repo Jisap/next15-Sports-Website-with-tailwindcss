@@ -70,7 +70,6 @@ const Slider = () => {
 
         const { image, name, description, price } = product
 
-
         return (
           <SwiperSlide key={index} className="select-none w-full cursor-pointer">
             <div className="bg-grey-50 h-[360px] flex items-center justify-center">
