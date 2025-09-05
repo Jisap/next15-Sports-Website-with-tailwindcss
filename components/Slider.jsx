@@ -72,7 +72,7 @@ const Slider = () => {
 
 
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="select-none w-full cursor-pointer">
             <div className="bg-grey-50 h-[360px] flex items-center justify-center">
               <Image 
                 src={image} 
@@ -82,6 +82,14 @@ const Slider = () => {
                 quality={100}
                 className=""
               />
+            </div>
+
+            <div className="w-full pt-4 flex flex-col gap-4">
+              <div>
+                <h6 className="font-semibold text-primary mb-1">{name}</h6>
+                <p >{description}</p>
+              </div>
+              <p className="font-semibold text-accent2">{price}</p>
             </div>
           </SwiperSlide>
         )
