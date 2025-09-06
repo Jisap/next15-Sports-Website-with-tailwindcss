@@ -1,23 +1,62 @@
+'use client';
 import Link from 'next/link'
 import React from 'react'
 import Slider from './Slider'
+import { motion } from 'framer-motion';
 
 const Latest = () => {
+  // Variantes para la animación del contenedor
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  // Variantes para los elementos hijos
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    show: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section className='mt-24'>
+    <motion.section
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      className='mt-24'
+    >
       <div className='container mx-auto'>
-        <div className='flex justify-between items-end mb-[72px]'>
-          <h4 className="h4 w-max border-b-2">
-            Explore Our Lates Collection
-          </h4>
-          <Link href="/" className="linl-primary text-accent2 hover:text-primary">
+        <motion.div 
+          variants={itemVariants} 
+          className='flex justify-between items-end mb-[72px]'
+        >
+          <h4 className="h4 w-max border-b-2">Explore Our Latest Collection</h4>
+          <Link 
+            href="/" 
+            className="link-primary text-accent2 hover:text-primary"
+          >
             View All
           </Link>
-        </div>
+        </motion.div>
         {/* Slider */}
-        <Slider />
+        <motion.div variants={itemVariants}>
+          <Slider />
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 
