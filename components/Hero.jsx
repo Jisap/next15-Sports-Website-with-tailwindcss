@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="relative flex flex-col xl:flex-row items-center w-full">
           
           {/* text */}
-          <div className="w-full max-w-[760px] mb-24 md:mb-0">
+          <div className="w-full max-w-[760px] mb-8 md:mb-0 flex flex-col items-center xl:items-start">
             {/* badge & text */}
             <div className="flex items-center gap-4 mb-12">
               <div className="bg-accent text-primary flex items-center gap-2 py-2 px-4 rounded-full">
@@ -19,7 +19,7 @@ const Hero = () => {
               <p>Premium Sports Apparel for Peak Performance</p>
             </div>
             {/* h1 */}
-            <h1 className="h1 mb-[40px]">
+            <h1 className="h1 mb-[40px] text-center xl:text-left">
               Unleash <br /> Your Inner <br/> Athlete
             </h1>
             {/* btns */}
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
 
           {/* img */}
-          <div className="relative xl:absolute xl:-right-[100px] xl:-top-7" >
+          <div className="relative scale-125 md:scale-100 md:top-0 xl:absolute xl:-right-[100px] xl:-top-7" >
             <img src="assets/img/hero/running.png" alt="" />
           </div>
 
