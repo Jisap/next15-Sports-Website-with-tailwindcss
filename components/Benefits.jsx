@@ -85,9 +85,18 @@ const Benefits = () => {
         </div>
 
         {/* img */}
-        <div className="w-full">
+        <div className="w-full h-[280px] xl:h-auto xl:absolute top-0 bottom-0 left-0 right-0 ">
           {/* logo bg */}
-          <div>logo</div>
+          <div className="w-full h-full bg-[url('/assets/img/benefits/logo.png')] bg-bottom bg-no-repeat absolute -bottom-56"></div>
+          <div className="relative w-full h-full flex justify-center items-end">
+            <Image 
+              src="/assets/img/benefits/s1.png"
+              width={916}
+              height={604}
+              alt=""
+              className="absolute xl:top-16 z-50"
+            />
+          </div>
         </div>
       </div>
     </section>
