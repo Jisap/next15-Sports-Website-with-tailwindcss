@@ -85,6 +85,10 @@ a.link-secondary {
   @apply bg-accent hover:bg-accent-hover transition-all duration-300;
 }
 
+.btn-primary {
+  @apply bg-primary hover:bg-primary/90 text-white transition-all duration-300;
+}
+
 .input {
   @apply h-[54px] border border-grey-200 outline-none
 }
