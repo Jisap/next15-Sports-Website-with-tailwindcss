@@ -18,6 +18,7 @@ const Category = () => {
             View All
           </Link>
         </div>
+
         {/* img grid */}
         <div className="grid grid-cols-3 gap-4 xl:gap-10 mb-10">
         {/* img 1 */}
@@ -49,6 +50,40 @@ const Category = () => {
               alt="" 
               className="object-contain"   
             />
+          </div>
+        </div>
+
+        {/* category */}
+        <div>
+          <div>
+            <h6 className="h6 pb-4 mb-6 border-b-2">Summer Inspiration</h6>
+            <ul>
+              <li>
+                <a href="#" className="link-secondary">
+                  Summer Clothes
+                </a>
+              </li>
+              <li>
+                <a href="#" className="link-secondary">
+                  Summer Outfits
+                </a>
+              </li>
+              <li>
+                <a href="#" className="link-secondary">
+                  Summer Tops
+                </a>
+              </li>
+              <li>
+                <a href="#" className="link-secondary">
+                  Summer Hots
+                </a>
+              </li>
+              <li>
+                <a href="#" className="link-secondary">
+                  Summer Dresses
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
