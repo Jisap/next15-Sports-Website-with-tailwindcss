@@ -1,27 +1,21 @@
-import React from 'react'
+"use client";
+
+import { motion } from "framer-motion";
 
 const Copyright = () => {
   return (
-    <section className='bg-primary mt-24 py-12 text-white'>
-      <div className='container mx-auto'>
-        <ul className='flex flex-col xl:flex-row items-center justify-center gap-6'>
-          <li>
-            <a href="#" className='border-b'>Terms of use</a>
-          </li>
-          <li>
-            <a href="#" className='border-b'>Cookings Setting</a>
-          </li>
-          <li>
-            <a href="#" className='border-b'>Privacy Policy</a>
-          </li>
-        </ul>
+    <div className="bg-primary py-6">
+      <motion.div 
+        className="container mx-auto text-center text-white/60"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        Copyright &copy; SportWeb 2024. All rights reserved.
+      </motion.div>
+    </div>
+  );
+};
 
-        <p>
-          &copy; 2025 Venoma. All rights reserved.
-        </p>
-      </div>
-    </section>
-  )
-}
-
-export default Copyright
+export default Copyright;
